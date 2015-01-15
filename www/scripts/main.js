@@ -42,7 +42,7 @@ cameraApp.prototype={
     
     _capturePhoto: function() {
         var that = this;
-        
+        navigator.notification.alert('hi');
         // Take picture using device camera and retrieve image as base64-encoded string.
         navigator.camera.getPicture(function(){
             that._onPhotoDataSuccess.apply(that,arguments);
